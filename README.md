@@ -6,7 +6,6 @@ BibTeX-Cleaner is a Python command-line tool that analyzes a `.bib` file against
 * [Description](#description)
 * [Setup](#setup)
 * [How to use](#how-to-use)
-* [Output](#output)
 * [Technologies](#technologies)
 * [License](#license)
 
@@ -19,23 +18,27 @@ Key features:
 * Generates a **clean `.bib` file** containing only the used citations.
 * Optionally overwrites the original `.bib` file, keeping only used entries.
 
-This helps keep bibliography files tidy before submission, avoiding warnings about unused references and catching missing ones before compilation fails.
-
 ## :gear: Setup <a name="setup"/>
 Requires Python 3.7+ (no external dependencies, uses only the standard library).
 
 Clone or download the script, then make it executable (optional):
 
-`chmod +x bib_cleaner.py`
+```
+chmod +x bib_cleaner.py
+```
 
 ## :man_technologist: How to use <a name="how-to-use"/>
 Run the script passing the `.aux` and `.bib` files as command-line arguments:
 
-`python3 bib_cleaner.py output.aux bibliography.bib`
+```
+python3 bib_cleaner.py output.aux bibliography.bib
+```
 
 By default, the cleaned bibliography is saved as `references_clean.bib`. You can specify a custom output path with `-o` / `--output`:
 
-`python3 bib_cleaner.py output.aux bibliography.bib -o my_clean_refs.bib`
+```
+python3 bib_cleaner.py output.aux bibliography.bib -o my_clean_refs.bib
+```
 
 **Arguments:**
 | Argument | Description |
